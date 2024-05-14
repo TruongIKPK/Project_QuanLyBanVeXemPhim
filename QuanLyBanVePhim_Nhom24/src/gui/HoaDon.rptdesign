@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.24" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.15.0.v202403260939</property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">odaDriverClass</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">odaURL</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">odaUser</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">odaAutoCommit</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">odaIsolationMode</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">odaPassword</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">odaJndiName</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">OdaConnProfileName</property>
+            <property name="id">58</property>
+        </structure>
+        <structure>
+            <property name="name">OdaConnProfileStorePath</property>
+            <property name="id">58</property>
+        </structure>
+    </list-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">120</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="58">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+            <property name="odaURL">jdbc:sqlserver://localhost:49951</property>
+            <property name="odaUser">sa</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">MTIz</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="60">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">MaCTHDXuat</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">MaCTHDXuat</text-property>
+                    <text-property name="heading">MaCTHDXuat</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">MaCTHDXuat</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">MaCTHDXuat</property>
+                    <property name="nativeName">MaCTHDXuat</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select dbo.CHITIETHOADONXUAT.MaCTHDXuat
+from dbo.CHITIETHOADONXUAT
+where dbo.CHITIETHOADONXUAT.MaCTHDXuat = 1]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>MaCTHDXuat</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>MaCTHDXuat</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>MaCTHDXuat</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="orientation">portrait</property>
+            <property name="borderBottomStyle">none</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderTopStyle">none</property>
+            <property name="height">3.5in</property>
+            <property name="width">2.5in</property>
+            <property name="headerHeight">0in</property>
+            <property name="footerHeight">0in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="4">
+            <property name="fontSize">16pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="paddingBottom">5pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">Vé Xem Phim</text-property>
+        </label>
+        <label id="6">
+            <property name="fontSize">18pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="paddingBottom">5pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">Gặp Lại Chị Bầu</text-property>
+        </label>
+        <grid id="7">
+            <property name="height">1.4333333333333333in</property>
+            <property name="width">1.9666666666666666in</property>
+            <column id="8">
+                <property name="width">0.9666666666666667in</property>
+            </column>
+            <column id="9">
+                <property name="width">1in</property>
+            </column>
+            <row id="10">
+                <property name="height">0.30833333333333335in</property>
+                <cell id="11">
+                    <label id="39">
+                        <property name="fontSize">14pt</property>
+                        <text-property name="text">Giờ (Time)</text-property>
+                    </label>
+                </cell>
+                <cell id="12">
+                    <label id="27">
+                        <property name="fontSize">14pt</property>
+                        <text-property name="text">Ngày(Date)</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="13">
+                <property name="height">0.2833333333333333in</property>
+                <cell id="14">
+                    <data id="61">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">MaCTHDXuat</property>
+                                <text-property name="displayName">MaCTHDXuat</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["MaCTHDXuat"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">MaCTHDXuat</property>
+                    </data>
+                </cell>
+                <cell id="15">
+                    <label id="29">
+                        <property name="fontSize">14pt</property>
+                        <property name="fontWeight">bold</property>
+                        <text-property name="text">21/03/2024</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="16">
+                <property name="height">0.31666666666666665in</property>
+                <cell id="17">
+                    <label id="31">
+                        <property name="fontSize">14pt</property>
+                        <text-property name="text">Tổng tiền</text-property>
+                    </label>
+                </cell>
+                <cell id="18">
+                    <label id="32">
+                        <property name="fontSize">14pt</property>
+                        <text-property name="text">Rạp/Ghế</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="19">
+                <property name="height">0.325in</property>
+                <cell id="20">
+                    <label name="d" id="33">
+                        <property name="fontSize">14pt</property>
+                        <property name="fontWeight">bold</property>
+                        <text-property name="text">100.000</text-property>
+                    </label>
+                </cell>
+                <cell id="21">
+                    <label id="36">
+                        <property name="fontSize">14pt</property>
+                        <property name="fontWeight">bold</property>
+                        <text-property name="text">06/L06</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="22">
+                <property name="height">0.2in</property>
+                <cell id="23">
+                    <label id="37">
+                        <property name="fontSize">5pt</property>
+                        <text-property name="text">Đã bao gồm VAT</text-property>
+                    </label>
+                </cell>
+                <cell id="24"/>
+            </row>
+        </grid>
+        <grid id="44">
+            <property name="width">1.9583333333333333in</property>
+            <column id="45">
+                <property name="width">1.1833333333333333in</property>
+            </column>
+            <column id="46">
+                <property name="width">0.775in</property>
+            </column>
+            <row id="47">
+                <cell id="48">
+                    <label id="40">
+                        <property name="fontSize">14pt</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <text-property name="text">Mã Vé Phim</text-property>
+                    </label>
+                </cell>
+                <cell id="49">
+                    <label id="53">
+                        <property name="fontSize">5pt</property>
+                        <property name="textAlign">justify</property>
+                        <text-property name="text">Công ty cổ phần thương mại rạp chiếu phim quốc gia</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="50">
+                <cell id="51">
+                    <label id="41">
+                        <property name="fontSize">14pt</property>
+                        <property name="fontWeight">bold</property>
+                        <text-property name="text">21321231</text-property>
+                    </label>
+                </cell>
+                <cell id="52">
+                    <label id="54">
+                        <property name="fontSize">5pt</property>
+                        <text-property name="text">Vé không hoàn trả</text-property>
+                    </label>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>
